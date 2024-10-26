@@ -39,10 +39,12 @@ export default function Nav(): JSX.Element {
       {/* Desktop Navigation */}
       <ul className="hidden justify-between gap-8 md:flex">
         {links.map((item) => (
-          <li key={item.name} className="group h-16 mt-7">
-            <Link href={item.url}>{item.name}</Link>
+          <li key={item.name} className="group h-16 font-semibold mt-7">
+            <Link href={item.url}>
+              <div className="pb-2"> {item.name}</div>
+            </Link>
             <div
-              className={`border-white mx-2 mt-2 ${
+              className={`border-white mx-2 ${
                 pathname === item.url ? "border-b-2" : "group-hover:border-b-2"
               }`}
             ></div>
@@ -70,8 +72,8 @@ export default function Nav(): JSX.Element {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute md:hidden overflow-hidden bg-gradient-to-br from-black via-gray-700 to-gray-50  top-0 left-0 right-0 transition-all duration-500 ease-in-out ${
-          isMenuOpen ? "h-96" : "h-0"
+        className={`absolute md:hidden overflow-hidden bg-gradient-to-br from-black via-gray-700 to-gray-50  top-0 left-0 right-0 transition-all duration-400 ease-in-out ${
+          isMenuOpen ? "h-[330px]" : "h-0"
         }`}
       >
         <ul className="flex flex-col pl-14 pt-20 space-y-4 w-full">

@@ -1,7 +1,8 @@
+"use";
 import React from "react";
 import Image from "next/image";
 
-export default function Home() {
+export default function sleep() {
   return (
     <div
       className=" container max-w-6xl mx-auto px-6 relative

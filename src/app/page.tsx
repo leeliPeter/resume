@@ -8,7 +8,7 @@ export default function Home() {
             md:h-[530px] my-28 md:px-2 md:mb-40
         "
     >
-      <div className="md:absolute md:left-2 contrast-75 blur-sm">
+      <div className="md:absolute md:left-2 contrast-75 ">
         <Image src="/sleep.jpg" width={700} height={700} alt="sleep " />
       </div>
       <div className="flex flex-col md:z-40 md:absolute md:right-0 md:top-[350px] bg-white items-center space-y-8 p-8 md:p-16">

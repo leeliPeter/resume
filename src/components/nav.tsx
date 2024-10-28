@@ -33,7 +33,7 @@ export default function Nav(): JSX.Element {
   return (
     <div className="flex justify-between pt-2 items-center px-4 text-white">
       <div className="text-4xl font-bold">
-        <Link href="/">Assignment1</Link>
+        <Link href="/">Peter Tam</Link>
       </div>
 
       {/* Desktop Navigation */}
@@ -72,7 +72,7 @@ export default function Nav(): JSX.Element {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute md:hidden overflow-hidden bg-gradient-to-br from-black via-gray-700 to-gray-50  top-0 left-0 right-0 transition-all duration-400 ease-in-out ${
+        className={`absolute md:hidden overflow-hidden bg-gradient-to-br from-black via-gray-700 to-gray-50  top-0 left-0 right-0 transition-all duration-600 ease-in-out ${
           isMenuOpen ? "h-[330px]" : "h-0"
         }`}
       >
